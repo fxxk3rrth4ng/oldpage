@@ -1,5 +1,10 @@
-table {
-	font-family: 'Nanum Gothic', sans-serif;
+table,td {
+	font-family: 'IBM Plex Sans KR', sans-serif;
+    border-collapse: collapse;
+}
+
+img {
+    vertical-align: bottom;
 }
 
 a {
