@@ -40,6 +40,13 @@ a {
 	color: inherit;
 }
 
+bg {
+    background-color: #6662B4;
+    padding: 15px;
+    font-weight: regular;
+    color: white;
+}
+
 cr {
     font-size: 20px;
 }
