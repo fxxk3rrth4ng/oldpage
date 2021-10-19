@@ -40,6 +40,10 @@ a {
 	color: inherit;
 }
 
+cr {
+    font-size: 20px;
+}
+
 .link {
     height: 90px;
     border-radius: 35%;
@@ -54,4 +58,10 @@ div#div1 {
 
 div#div2 {
     margin: 30px 0 0 0;
+}
+
+div#box {
+    height: 50px;
+    display: table-cell;
+    vertical-align: text-bottom;
 }
