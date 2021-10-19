@@ -35,9 +35,18 @@ h3 {
     font-weight: normal;
 }
 
+h4 {
+    font-size: 40px;
+    font-weight: normal;
+}
+
 a {
     text-decoration: none;
 	color: inherit;
+}
+
+g {
+    font-size: 20px;
 }
 
 bg {
@@ -71,4 +80,19 @@ div#box {
     height: 50px;
     display: table-cell;
     vertical-align: text-bottom;
+}
+
+div#game {
+    width: 1000px;
+}
+
+div#title {
+    float: left;
+    width: 300px;
+    font-weight: bold;
+}
+
+div#user {
+    float: left;
+    font-size: 25px;
 }
