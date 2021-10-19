@@ -1,13 +1,16 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@font-face {
+    font-family: 'nsq';
+    src: url('NanumSquare_acR.ttf') format('truetype');
+}
 
 body {
-    font-family: 'Gotham Light', sans-serif;
+    font-family: 'nsq';
     font-size: 30px;
     margin: 0 64px 0 64px;
 }
 
 h1 {
-    font-family: 'Gotham', sans-serif;
+    font-family: 'nsq', sans-serif;
     font-size: 75px;
 }
 
@@ -16,7 +19,9 @@ h2 {
 }
 
 h3 {
-    font-family: 'Gotham XLight', sans-serif;
+    font-family: 'nsq', sans-serif;
+    font-size:30px;
+    font-weight: normal;
 }
 
 a {
