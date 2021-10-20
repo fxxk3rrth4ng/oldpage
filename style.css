@@ -17,6 +17,8 @@ body {
     font-family: 'nsq';
     font-size: 30px;
     margin: 0 64px 0 64px;
+    background-attachment: fixed;
+    background-image: url(assets/Background.png);
 }
 
 h1 {
