@@ -69,6 +69,12 @@ cr {
 .icon {
     height: 60px;
     width: 60px;
+    border-radius: 50%;
+}
+
+.OG {
+    height: 60px;
+    width: 60px;
     border-radius: 35%;
 }
 
@@ -107,4 +113,9 @@ div#title {
 div#user {
     float: left;
     font-size: 25px;
+}
+
+div#og {
+    float: left;
+    padding-right: 15px;
 }
