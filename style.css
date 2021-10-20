@@ -80,6 +80,12 @@ cr {
     border-radius: 35%;
 }
 
+.solved {
+    height: 40px;
+    padding-right: 10px;
+    
+}
+
 div#icon {
     float:left;
     padding-right: 20px;
@@ -120,4 +126,8 @@ div#user {
 div#og {
     float: left;
     padding-right: 15px;
+}
+
+div#coding {
+    width: 1000px;
 }
