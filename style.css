@@ -28,18 +28,19 @@ body {
 
 header {
     position: fixed;
-    width: 100%;
     border-bottom: black;
-    width: 1000px;
+    width: 1064px;
     background: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
 }
 
 h1 {
     font-family: 'Gotham', sans-serif;
     font-size: 75px;
+    margin: 50px 0;
 }
 
 h2 {
@@ -100,6 +101,10 @@ cr {
     height: 40px;
     padding-right: 10px;
     
+}
+
+.HD {
+    height: 50px;
 }
 
 div#icon {
@@ -178,10 +183,10 @@ div#t2 {
 }
 
 div#profile {
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 div#nav {
     float: left;
-    margin-left: 15px;
+    margin-left: 20px;
 }
