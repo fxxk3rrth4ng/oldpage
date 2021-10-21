@@ -9,6 +9,11 @@
 }
 
 @font-face {
+    font-family: 'KleeOne';
+    src: url('fonts/KleeOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Gotham';
     src: url('fonts/Gotham-Black.otf') format('OpenType');
 }
@@ -123,6 +128,12 @@ div#user {
     font-size: 25px;
 }
 
+div#tier {
+    float: left;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
 div#og {
     float: left;
     padding-right: 15px;
@@ -130,4 +141,27 @@ div#og {
 
 div#coding {
     width: 1000px;
+}
+
+div#t1 {
+    background-color: white;
+    border: #435F7A solid;
+    color: #435F7A;
+    float:left;
+    font-size: 20px;
+    font-weight: 900;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+div#t2 {
+    background: linear-gradient(#FAE3F2, #F592DC, #D360C4, white);
+    border: #D559C1 solid;
+    color: white;
+    float:left;
+    font-family: 'KleeOne';
+    font-size: 20px;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 5px;
 }
