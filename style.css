@@ -26,6 +26,17 @@ body {
     background-image: url(assets/Background.png);
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    border-bottom: black;
+    width: 1000px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h1 {
     font-family: 'Gotham', sans-serif;
     font-size: 75px;
@@ -164,4 +175,13 @@ div#t2 {
     font-weight: 500;
     margin-right: 10px;
     padding: 5px;
+}
+
+div#profile {
+    padding-top: 150px;
+}
+
+div#nav {
+    float: left;
+    margin-left: 15px;
 }
