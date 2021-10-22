@@ -100,3 +100,13 @@ div#album {
     line-height: 100px;
     width: 250px;
 }
+
+div#box {
+    height: 50px;
+    display: table-cell;
+    vertical-align: text-bottom;
+}
+
+cr {
+    font-size: 20px;
+}
