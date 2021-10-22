@@ -79,6 +79,11 @@ cr {
     font-size: 20px;
 }
 
+.HL {
+    padding-left: 15px;
+    height: 27px;
+}
+
 .link {
     height: 90px;
     width: 90px;
