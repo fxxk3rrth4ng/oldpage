@@ -74,13 +74,22 @@ div#artist {
     width: 200px;
 }
 
+div#artist2 {
+    font-size: 30px;
+    padding-left: 15px;
+    height: 100px;
+    float: left;
+    line-height: 50px;
+    width: 200px;
+}
+
 div#title {
     font-size: 30px;
     padding-left: 15px;
     height: 100px;
     float: left;
     line-height: 100px;
-    width: 300px;
+    width: 450px;
 }
 
 div#album {
@@ -89,5 +98,5 @@ div#album {
     height: 100px;
     float: left;
     line-height: 100px;
-    width: 350px;
+    width: 250px;
 }
