@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'nsq';
+    src: url('../fonts/NanumSquare_acR.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url('../fonts/GothamLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KleeOne';
+    src: url('../fonts/KleeOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Black.otf') format('OpenType');
+}
+
+body {
+    padding-top: 30px;
+    font-family: 'nsq';
+    font-size: 30px;
+    margin: 0 64px 0 64px;
+    background-attachment: fixed;
+    background: white;
+}
+
+header {
+    border-bottom: black;
+    width: 1064px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+h1 {
+    font-family: 'Gotham', sans-serif;
+    font-size: 75px;
+    margin: 50px 0;
+}
+
+.HD {
+    height: 50px;
+}
+
+.cover {
+    height: 100px;
+    border-radius: 35%;
+}
+
+div#nav {
+    float: left;
+    margin-left: 20px;
+}
+
+div#songs {
+    height: 100px;
+}
+
+div#cover{
+    float: left;
+}
+
+div#artist {
+    font-size: 30px;
+    padding-left: 15px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+    width: 200px;
+}
+
+div#title {
+    font-size: 30px;
+    padding-left: 15px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+    width: 300px;
+}
+
+div#album {
+    font-size: 30px;
+    padding-left: 15px;
+    height: 100px;
+    float: left;
+    line-height: 100px;
+    width: 350px;
+}
