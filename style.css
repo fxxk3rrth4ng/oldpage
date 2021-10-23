@@ -18,6 +18,16 @@
     src: url('fonts/Gotham-Black.otf') format('OpenType');
 }
 
+body.dark-theme {
+    color: white;
+    background: black;
+}
+
+body.dark-theme header{
+    background: black;
+    color: white;
+}
+
 body {
     font-family: 'nsq';
     font-size: 30px;
@@ -25,11 +35,6 @@ body {
     background-attachment: fixed;
     background: white;
     color: black;
-}
-
-body.dark-theme {
-    color: white;
-    background: black;
 }
 
 header {
@@ -41,11 +46,6 @@ header {
     height: 120px;
     padding: 32px 32px 32px 32px;
     background: white;
-}
-
-body.dark-theme header{
-    background: black;
-    color: white;
 }
 
 hr.column {
@@ -117,6 +117,7 @@ cr {
     height: 60px;
     width: 60px;
     border-radius: 35%;
+    border: 2px white solid;
 }
 
 .solved {
