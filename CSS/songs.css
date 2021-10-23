@@ -58,7 +58,7 @@ table {
 }
 
 .cover {
-    height: 75px;
+    width: 75px;
     vertical-align: bottom;
 }
 
@@ -81,12 +81,18 @@ div#feat {
     font-size: 15px;
     font-weight: light;
     font-style: italic;
+    padding-top: 4px;
 }
 
 div#box {
     height: 50px;
     display: table-cell;
     vertical-align: text-bottom;
+}
+
+info {
+    font-size: 15px;
+    font-style: italic;
 }
 
 cr {
