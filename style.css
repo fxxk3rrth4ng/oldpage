@@ -116,6 +116,10 @@ cr {
     height: 60px;
 }
 
+.top {
+    height: 75px;
+}
+
 div#icon {
     float:left;
     padding-right: 20px;
@@ -191,10 +195,6 @@ div#t2 {
     padding: 5px;
 }
 
-div#profile {
-    padding-top: 120px;
-}
-
 div#nav {
     float: left;
     margin-left: 20px;
@@ -204,4 +204,10 @@ div#MChr {
     float: left;
     justify-content: space-between;
     margin-left: 400px;
+}
+
+div#FS {
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
