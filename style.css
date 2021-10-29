@@ -124,6 +124,13 @@ img.NewLink {
     margin: 21px;
 }
 
+img.NewDM {
+    height: 40px;
+    width: 40px;
+    margin: 25px;
+}
+
+
 .icon {
     height: 60px;
     width: 60px;
