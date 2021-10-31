@@ -118,7 +118,6 @@ cr {
 	height: 90px;
 	width: 90px;
 	border-radius: 35%;
-	border: 2px white solid;
 }
 
 div.NewIco {
@@ -137,6 +136,32 @@ img.NewLink {
 	height: 48px;
 	width: 48px;
 	margin: 21px;
+	transition: 0.2s all ease-in-out;
+}
+
+.NewSvg {
+	fill: white;
+	margin: 21px;
+	transition: 0.5s;
+}
+
+body.dark-mode .NewSvg {
+	fill: black;
+	transition: 0.5s;
+}
+
+div.GitHub {
+	background: black;
+	transition: 0.5s;
+}
+
+body.dark-mode .GitHub {
+	background: white;
+	transition: 0.5s;
+}
+
+.NewSvg:hover {
+	transform: scale(1.2);
 	transition: 0.2s all ease-in-out;
 }
 
@@ -174,10 +199,6 @@ img.NewDM {
 .solved {
 	height: 40px;
 	padding-right: 10px;
-}
-
-.HD {
-	height: 50px;
 }
 
 .maple {
@@ -307,8 +328,8 @@ div#FS {
 	display: inline-block;
 	width: 60px;
 	height: 34px;
-	bottom: 20px;
-	right: 100px;
+	bottom: 28px;
+	right: 75px;
 }
 
 .switch input {
