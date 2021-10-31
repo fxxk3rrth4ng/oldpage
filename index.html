@@ -17,10 +17,10 @@
         <a href="#FS"><img loading="lazy" class= "top" src="assets/icons/Top.png" title="위로 가기">
         </a>
     </div>
-    <div style="position: fixed; bottom: 10px; right: 95px;">
-        <button class="btn-toggle"><img loading="lazy" class= "top" src="assets/icons/DarkMode.png" title="위로 가기">
-        </button>
-    </div>
+    <label for="ChangeTheme" class="switch">
+        <input type="checkbox" id="ChangeTheme" />
+        <span class="slider round"></span>
+    </label>
     
     <header>
         <h1>@_y0on_</h1>
@@ -77,7 +77,7 @@
         <div id="G">
             <div id="icon"><img loading="lazy" class="icon" src="assets/icons/Solved.png"></div>
             <div id="title">Solved.ac</div>
-            <a target='_blank' href="https://solved.ac/ftw_0x00"><div id="t1">S4</div> <div id="tier">
+            <a target='_blank' href="https://solved.ac/ftw_0x00"><div class="t1">S4</div> <div id="tier">
                 ftw_0x00</div></a>
         </div>
         <div style="height:4em;"></div>
@@ -88,7 +88,61 @@
         <h2>Games</h2>
         <bg>주로 이런 게임을 합니다.</bg>
         <div style="height: 2em;"></div>
-
+        
+        <div id="G">
+            <div id="title">Rhythm</div>
+        </div>
+        <div style="height: 1em;"></div>
+        <hr noshade />
+        <div id="G">
+            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/SDVX.png"></div>
+            <div id="title">SOUND VOLTEX</div>
+            <a target='_blank' href="https://p.eagate.573.jp/game/sdvx/vi/playdata/rival/profile.html?rival_id=SV-3346-9604">
+            <div class="tSDVX">麗華</div>
+            <div id="tier">
+                B1NK* <font color = "#888888", size="4"> - SV-3346-9604<br>VOLFORCE </font><font color = "#F73562", size="4">15.646</font></div></a>
+        </div>
+        <div style="height: 2em;"></div>
+        <hr noshade />
+        <div id="G">
+            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/Nostalgia.png"></div>
+            <div id="title">NOSTALGIA</div>
+            <a target='_blank' href="https://nosdata.info/zeta/mypage.php?id=wolgok0304">
+            <div id="tier">
+                b43ch00 <br><font color = "#888888", size="4">Grade: 4142.87</font></div></a>
+        </div>
+        <div style="height: 2em;"></div>
+        <hr noshade />
+        <div id="G">
+            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/chunithm.png"></div>
+            <div id="title">CHUNITHM</div>
+            <a target='_blank' href="https://nosdata.info/zeta/mypage.php?id=wolgok0304">
+            <div id="tier">
+                BL4NK* <br><font color = "#888888", size="4">Rating: 12.89</font></div></a>
+        </div>
+        <div style="height: 2em;"></div>
+        <hr noshade />
+        <div id="G">
+            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/maimai.png"></div>
+            <div id="title">maimai DX</div>
+            <a target='_blank' href="https://nosdata.info/zeta/mypage.php?id=wolgok0304">
+            <div id="tier">
+                BL4NK* <br><font color = "#888888", size="4">Rating: 4809</font></div></a>
+        </div>
+        <div style="height: 2em;"></div>
+        <hr noshade />
+        <div id="G">
+            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/osu.png"></div>
+            <div id="title">osu!</div>
+            <div id="user"><a target='_blank' href="https://osu.ppy.sh/users/12302079">
+               y00ns421</a></div>
+        </div>
+        <div style="height: 3em;"></div>
+        <div id="G">
+            <div id="title">Non-Rhythm</div>
+        </div>
+        <div style="height: 1em;"></div>
+        <hr noshade />
         <div id="G">
             <div id="icon"><img loading="lazy" class="icon" src="assets/icons/Steam.png"></div>
             <div id="title">Steam</div>
@@ -111,33 +165,6 @@
             <div id="title">Eternal Return</div>
             <div id="user"><a target='_blank' href="https://dak.gg/bser/players/B1NK">
                B1NK</a></div>
-        </div>
-        <div style="height: 2em;"></div>
-        <hr noshade />
-        <div id="G">
-            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/SDVX.png"></div>
-            <div id="title">SOUND VOLTEX</div>
-            <a target='_blank' href="https://p.eagate.573.jp/game/sdvx/vi/playdata/rival/profile.html?rival_id=SV-3346-9604">
-            <div id="t2">麗華</div>
-            <div id="tier">
-                B1NK* <font color = "#888888", size="4"> - SV-3346-9604<br>VOLFORCE </font><font color = "#F73562", size="4">15.646</font></div></a>
-        </div>
-        <div style="height: 2em;"></div>
-        <hr noshade />
-        <div id="G">
-            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/Nostalgia.png"></div>
-            <div id="title">NOSTALGIA</div>
-            <a target='_blank' href="https://nosdata.info/zeta/mypage.php?id=wolgok0304">
-            <div id="tier">
-                b43ch00 <br><font color = "#888888", size="4">Grade: 4142.87</font></div></a>
-        </div>
-        <div style="height: 2em;"></div>
-        <hr noshade />
-        <div id="G">
-            <div id="icon"><img loading="lazy" class="icon" src="assets/icons/osu.png"></div>
-            <div id="title">osu!</div>
-            <div id="user"><a target='_blank' href="https://osu.ppy.sh/users/12302079">
-               y00ns421</a></div>
         </div>
         <div style="height: 2em;"></div>
         <hr noshade />
@@ -277,9 +304,9 @@
     <div id="box">
         <cr><i>© 2021 y0On</i></cr>
     </div>
-
-    <script src="JS/Lazy.js"></script>
-    <script src="JS/grad.js"></script>
-    <script src="JS/dark.js"></script>
+    
+    <script src="JS/lazyLoad.js"></script>
+    <script src="JS/gradDDay.js"></script>
+    <script src="JS/darkMode.js"></script>
 </body>
 </html>
