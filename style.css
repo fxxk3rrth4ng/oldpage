@@ -94,6 +94,16 @@ a:hover {
 	color: #0a58ca;
 }
 
+svg {
+	fill: black;
+	transition: 0.5s;
+}
+
+body.dark-mode svg {
+	fill: white;
+	transition: 0.5s;
+}
+
 g {
 	font-size: 20px;
 }
