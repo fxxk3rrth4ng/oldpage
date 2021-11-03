@@ -1,713 +1,993 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../src/CSS/songs.css">
-    <title>Songs | y0On</title>
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../src/CSS/songnew.css" />
+		<title>Songs | y0On</title>
+	</head>
 
-<header>
-    <h1>Songs</h1>
-        <nav>
-            <div id="nav">
-                <a href="pages.html">
-                    <img loading="lazy" class="HD" title="Pages" src="../assets/icons/Folder.png">
-                </a>
-            </div>
-            <div id="nav">
-                <a href="../index.html">
-                    <img loading="lazy" class="HD" title="Go to Main Page" src="../assets/icons/Home.png">
-                </a>
-            </div>
-        </nav>
-</header>
+	<body>
+		<header>
+			<h1>Songs</h1>
+			<nav>
+				<div id="nav">
+					<a href="pages.html">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="50"
+							height="50"
+							fill="currentColor"
+							class="bi bi-folder-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"
+							/>
+						</svg>
+					</a>
+				</div>
+				<div id="nav">
+					<a href="../index.html">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="50"
+							height="50"
+							fill="currentColor"
+							class="bi bi-house-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill-rule="evenodd"
+								d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+							/>
+							<path
+								fill-rule="evenodd"
+								d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+							/>
+						</svg>
+					</a>
+				</div>
+			</nav>
+		</header>
+		<label for="ChangeTheme" class="switch">
+			<input type="checkbox" id="ChangeTheme" />
+			<span class="slider round"></span>
+		</label>
+        <div style="position: fixed; bottom: 15px; right: 15px;">
+            <a href="#nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+              </svg>
+            </a>
+        </div>
+		<div style="height: 2em"></div>
+		<table border="1" bordercolor="black" width="960">
+			<tr height="40">
+				<td width="75"></td>
+				<td class="text">Artist</td>
+				<td class="text">Title</td>
+				<td class="text">Album</td>
+				<td width="75" class="text">Link</td>
+			</tr>
+			<tr height="75">
+				<td width="75"><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/127567/12756720.jpg" /></td>
+				<td class="text">5 Seconds Of Summer</td>
+				<td class="text">Woke Up in Japan</td>
+				<td class="text">Youngblood</td>
+				<td width="75" class="link">
+					<a target="_blank" href="https://open.spotify.com/track/5FA9XC36IlV9bnhMqqzNc9?si=b602b8f331ec4d81">
+						<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+					</a>
+				</td>
+			</tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202919/20291993.jpg"></td>
+                <td class="text">기리보이</td>
+                <td class="text">거지<br>
+                    <div id="feat">(Feat. YUNHWAY, Jhnovr, JUSTHIS)</div></td>
+                <td class="text">치명적인 앨범 Ⅲ</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/51Y7jbTiH8xBDfLvRAxFFE?si=4600e5c92e7f4c0a">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/9574/957418.jpg"></td>
+                <td class="text">김승민</td>
+                <td class="text">Chase the Star</td>
+                <td class="text">Chase the Star</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5fLUy8R2JOpCXH33fesMmv?si=36ae3ea21751409b">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/38/3894.jpg"></td>
+                <td class="text">모자이크</td>
+                <td class="text">왕자와 병사들</td>
+                <td class="text">모자이크 3</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="http://kko.to/ehWjwIZ4j">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" class="melon" viewBox="0 0 17.225168 22.274477">
+                            <path id="path4291" d="m 17.22512,2.98256 c 0,1.64728 -1.335243,2.98253 -2.977426,2.98253 -1.647322,0 -2.982555,-1.33525 -2.982555,-2.98253 C 11.265139,1.33521 12.600372,0 14.247694,0 15.889877,0 17.22512,1.33521 17.22512,2.98256"></path>
+                            <path id="path4299" d="m 7.929596,6.57389 c 4.496844,0 7.924476,3.36624 7.924476,7.86819 0,4.49686 -3.427632,7.83241 -7.924476,7.83241 C 3.427631,22.27449 0,18.93894 0,14.44208 0,9.94013 3.427631,6.57389 7.929596,6.57389 m 0,11.65906 c 2.020769,0 3.489021,-1.59107 3.489021,-3.79087 0,-2.20496 -1.468252,-3.79595 -3.489021,-3.79595 -2.020771,0 -3.494141,1.59099 -3.494141,3.79595 0,2.1998 1.47337,3.79087 3.494141,3.79087"></path>
+                          </g>
+                        </svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/5855/585591.jpg"></td>
+                <td class="text">볼빨간사춘기</td>
+                <td class="text">프리지아</td>
+                <td class="text">Full Album RED PLANET</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/0KX2V65DSgo9ii3A0rJAPw?si=abe5da4abbdb44ff">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202383/20238312.jpg"></td>
+                <td class="text">백예린</td>
+                <td class="text">그건 아마 우리의 잘못은 아닐거야</td>
+                <td class="text">Our love is great</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/2xxAW1kGFSVCDdRVoryX8R?si=b19c0b72dac54ec3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204200/20420099.jpg"></td>
+                <td class="text">백예린</td>
+                <td class="text">왜? 날</td>
+                <td class="text">선물</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/4SkwI7BxrIk5t5bpbvcrs6?si=daf4257cbc184a39">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202938/20293864.jpg"></td>
+                <td class="text">선우정아</td>
+                <td class="text">도망가자 (Run With Me)</td>
+                <td class="text">Serenade</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/1m8b3KFsAiGyjRc90ZfEB9?si=befe8189437c40ea">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/2924/292427_cf001.jpg"></td>
+                <td class="text">스탠딩에그</td>
+                <td class="text">Little Star</td>
+                <td class="text">Lucky</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5Y9hGEOA9o5xdA8RHt8jKw?si=2a0f163c60c548f3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40657/4065711.jpg"></td>
+                <td class="text">영재</td>
+                <td class="text">Beautiful</td>
+                <td class="text">COLORS from Ars</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/6ZfBdeyXWs5E3hpdL0WhzW?si=facd99c270a84a21">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203666/20366687.jpg"></td>
+                <td class="text">원슈타인</td>
+                <td class="text">세상에 나쁜 개는 없다<br>
+                    <div id="feat">(Feat. YDG, Zion.T) (Prod. Slom)</div></td>
+                <td class="text">쇼미더머니 9 Semi Final</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/1BVXVMH9da5wS4fe6vCVqS?si=0ece31399ad149ad">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202371/20237198.jpg"></td>
+                <td class="text">잔나비</td>
+                <td class="text">나의 기쁨 나의 노래 (Intro)</td>
+                <td class="text">전설</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/6qpEu4YIoPzFjhXq8WTXCC?si=a3cfdbaaf3374d18">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202917/20291742.jpg"></td>
+                <td class="text">창모</td>
+                <td class="text">2 minutes of hell<br>
+                    <div id="feat">(Feat. Paul Blanco)</div></td>
+                <td class="text">Boyhood</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5J1kkr5sbA2uOOuNpBOkIN?si=c143fb594b634ea6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201722/20172253.jpg"></td>
+                <td class="text">창모</td>
+                <td class="text">라일락<br>
+                    <div id="feat">(Feat. 최정훈 of 잔나비)</div></td>
+                <td class="text">닿는 순간</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/2HY84IWRZVIrbPn6c6EIim?si=6a946ae01ad944b0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202189/20218902.jpg"></td>
+                <td class="text">케이시</td>
+                <td class="text">그때가 좋았어</td>
+                <td class="text">그때가 좋았어</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3LpAsXjqTQ5FUyptb2lujH?si=1ec0ec7c3ac84375">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/200641/20064160.jpg"></td>
+                <td class="text">태연</td>
+                <td class="text">11:11</td>
+                <td class="text">11:11</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/2Y4iTaIAamhYPyZcOdfL3g?si=01f08873b4dc42f3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201547/20154722.jpg"></td>
+                <td class="text">폴킴</td>
+                <td class="text">모든 날, 모든 순간</td>
+                <td class="text">'키스 먼저 할까요?'<br>OST Part.3</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3Ml2s37uS9jqRM2R3bfDiB?si=6b7ea595bd784373">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/3456/345641.jpg"></td>
+                <td class="text">프라이머리</td>
+                <td class="text">3호선 매봉역<br>
+                    <div id="feat">(Feat. Paloalto, Beenzino)</div></td>
+                <td class="text">Primary And<br>The Messengers LP</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3oDNKxY583pu08FJw8tst5?si=fec69349f27a4b70">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204215/20421555.jpg"></td>
+                <td class="text">피노다인</td>
+                <td class="text">Universe<br>
+                    <div id="feat">(Feat. 이적)</div></td>
+                <td class="text">Universe</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/68duJkvrmsHi0nR44nUXZc?si=bbb615265af04f30">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203151/20315104.jpg"></td>
+                <td class="text">한요한</td>
+                <td class="text">400km<br>
+                    <div id="feat">(Feat. Kid Milli)</div></td>
+                <td class="text">원기옥</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5PFqdHy3b9PGgfns2uVpE6?si=0cb73d86257e4264">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201859/20185989.jpg"></td>
+                <td class="text">한요한</td>
+                <td class="text">따릉이</td>
+                <td class="text">청룡쇼바</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/59B7I3HFd47ujLqwnlBs4s?si=fba6db980f2c4a8f">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201292/20129278.jpg"></td>
+                <td class="text">허클베리피</td>
+                <td class="text">One of Them<br>
+                    <div id="feat">(Feat. JUSTHIS & EK)</div></td>
+                <td class="text">One of Them</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/1kG6aENoF6GP5p6SJQQDSn?si=54995dd900a84cb0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/7469/746993.jpg"></td>
+                <td class="text">혁오</td>
+                <td class="text">LOVE YA!</td>
+                <td class="text">24 : How to find true love<br>and happiness</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/70M62MNyEskm9on3FiDubd?si=9ec1a289e1424efa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202401/20240116.jpg"></td>
+                <td class="text">ASH ISLAND</td>
+                <td class="text">Paranoid</td>
+                <td class="text">ASH</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/4f3E2bdBCYDvC0otoYcdXg?si=dbd0ef8dbb454cb0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202401/20240116.jpg"></td>
+                <td class="text">ASH ISLAND</td>
+                <td class="text">발할라 (Valhalla)<br>
+                    <div id="feat">(Feat. Hash Swan & Yami Tommy)</div></td>
+                <td class="text">ASH</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3KcHt0BQF67rdea6eVVL2G?si=5774b175a66d4932">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/3338/333800.jpg"></td>
+                <td class="text">Beenzino</td>
+                <td class="text">If I Die Tomorrow</td>
+                <td class="text">2 4 : 2 6</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/0XAjKGJBKFVfiG3XvGwIcH?si=a3f0c62fe1d04f40">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202415/20241522.jpg"></td>
+                <td class="text">BewhY</td>
+                <td class="text">찬란</td>
+                <td class="text">The Movie Star</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/56gnI7SIZbFhiwzfN1ogN4?si=5818b80c26d04bbf">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40598/4059842.jpg"></td>
+                <td class="text">BewhY</td>
+                <td class="text">Celebration</td>
+                <td class="text">032 Funk</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3bm7XUKbcBSHTciUGRAaCR?si=cb959b0b18db40f5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203180/20318052.jpg"></td>
+                <td class="text">BewhY, 손심바</td>
+                <td class="text">어디로<br>
+                    <div id="feat">(Feat. C JAMM, Jvcki Wai)</div></td>
+                <td class="text">NEO CHRISTIAN</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/35QdNOzsIMw1ZXElaGH8Ec?si=85795aa2394a4e4f">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40342/4034280.jpg"></td>
+                <td class="text">CHEEZE</td>
+                <td class="text">이렇게 좋아해 본 적이 없어요</td>
+                <td class="text">이렇게 좋아해 본 적이 없어요<br>(소녀의 세계 X CHEEZE(치즈))</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/0WbOmRgxeIScXc0H50zjIx?si=f3b78e37b518427c">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202541/20254188.jpg"></td>
+                <td class="text">C JAMM</td>
+                <td class="text">코케인 러브♥<br>
+                    <div id="feat">(Feat. Yescoba)</div></td>
+                <td class="text">킁</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5199XnGGeioscP5Crleqgh?si=8159801798aa4b4a">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/6228/622831.jpg"></td>
+                <td class="text">Calvin Harris</td>
+                <td class="text">Feels<br>
+                    <div id="feat">(Feat. Pharrell, Katy Perry, Big Sean)</div></td>
+                <td class="text">Funk Wav Bounces Vol.1</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5bcTCxgc7xVfSaMV3RuVke?si=ffea1892d7da44aa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203162/20316203.jpg"></td>
+                <td class="text">CODE KUNST</td>
+                <td class="text">PEOPLE<br>
+                    <div id="feat">(Feat. Paloalto, The Quiett)</div></td>
+                <td class="text">PEOPLE</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/55VLNyLM11aRY7rn4xSupR?si=003af69f10a14ad8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203326/20332694.jpg"></td>
+                <td class="text">D-Hack, Pateko</td>
+                <td class="text">OHAYO MY NIGHT</td>
+                <td class="text">OHAYO MY NIGHT</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/4iJprGt1rt5iy0sxXXaRWn?si=66d46d3945744b82">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/6118/611813.jpg"></td>
+                <td class="text">Ed Sheeran</td>
+                <td class="text">Perfect</td>
+                <td class="text">÷ [Deluxe]</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v?si=9086289a757e45bb">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-000124216052-6ifvq8-t500x500.jpg"></td>
+                <td class="text">E SENS</td>
+                <td class="text" colspan="2">비행</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://soundcloud.com/esensofficial/6xilzhi4cf8c">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" class="bi" fill="currentColor" viewBox="0 208.952 1048.713 581.696"><path d="M0 686.216c0 13.014 4.718 22.854 14.152 29.524 9.435 6.669 19.52 9.027 30.256 7.076 10.085-1.952 17.161-5.531 21.229-10.736 4.066-5.205 6.1-13.827 6.1-25.864v-141.52c0-10.086-3.497-18.626-10.492-25.62-6.994-6.995-15.534-10.492-25.62-10.492-9.76 0-18.137 3.497-25.132 10.492C3.498 526.07 0 534.61 0 544.696v141.52zm112.24 60.512c0 9.436 3.335 16.511 10.004 21.229 6.67 4.718 15.21 7.076 25.62 7.076 10.736 0 19.438-2.359 26.108-7.076 6.669-4.717 10.004-11.793 10.004-21.229V416.84c0-9.76-3.498-18.138-10.492-25.132-6.995-6.994-15.535-10.492-25.62-10.492-9.76 0-18.138 3.498-25.132 10.492-6.995 6.995-10.492 15.372-10.492 25.132v329.888zm111.752 15.616c0 9.435 3.416 16.511 10.248 21.229 6.832 4.717 15.616 7.076 26.353 7.076 10.41 0 18.95-2.359 25.619-7.076 6.67-4.718 10.005-11.794 10.005-21.229V461.248c0-10.085-3.498-18.707-10.492-25.864-6.995-7.157-15.372-10.735-25.132-10.735-10.086 0-18.707 3.578-25.864 10.735s-10.736 15.779-10.736 25.864v301.096zm112.24 1.464c0 17.894 12.037 26.841 36.112 26.841 24.074 0 36.111-8.947 36.111-26.841v-488c0-27.328-8.296-42.781-24.888-46.36-10.736-2.603-21.31.488-31.72 9.272-10.411 8.784-15.616 21.146-15.616 37.088v488zm114.193 14.152V247.016c0-16.917 5.042-27.002 15.128-30.256 21.797-5.205 43.432-7.808 64.904-7.808 49.775 0 96.136 11.712 139.079 35.136 42.944 23.424 77.674 55.388 104.188 95.892 26.515 40.505 41.887 85.156 46.116 133.957 19.845-8.459 40.991-12.688 63.439-12.688 45.547 0 84.506 16.104 116.876 48.312 32.371 32.209 48.557 70.923 48.557 116.145 0 45.547-16.186 84.424-48.557 116.632-32.37 32.208-71.166 48.312-116.388 48.312l-424.56-.488c-2.929-.976-5.125-2.766-6.589-5.368s-2.193-4.882-2.193-6.834z"/></svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40638/4063862.jpg"></td>
+                <td class="text">GRAY</td>
+                <td class="text">Party For The Night<br>
+                    <div id="feat">(Feat. 로꼬, 이하이)</div></td>
+                <td class="text">grayground.</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/2UsZC5QgWeHj8jlhEoXplf?si=5f28c5fb8c7949c4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40638/4063862.jpg"></td>
+                <td class="text">GRAY</td>
+                <td class="text">Selfish<br>
+                    <div id="feat">(Feat. 우원재)</div></td>
+                <td class="text">grayground.</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/6De1dLF23zuUzf5jbh2vI1?si=7dac2d56ccb04ea1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-q10QrAyZRhz0UIdC-1bhpEQ-t500x500.jpg"></td>
+                <td class="text">HΛVO</td>
+                <td class="text" colspan="2">🤬21세기 강제징병 배상하라!!!🤬</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://soundcloud.com/dhckdgus8521/dontwannabeamilitary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" class="bi" fill="currentColor" viewBox="0 208.952 1048.713 581.696"><path d="M0 686.216c0 13.014 4.718 22.854 14.152 29.524 9.435 6.669 19.52 9.027 30.256 7.076 10.085-1.952 17.161-5.531 21.229-10.736 4.066-5.205 6.1-13.827 6.1-25.864v-141.52c0-10.086-3.497-18.626-10.492-25.62-6.994-6.995-15.534-10.492-25.62-10.492-9.76 0-18.137 3.497-25.132 10.492C3.498 526.07 0 534.61 0 544.696v141.52zm112.24 60.512c0 9.436 3.335 16.511 10.004 21.229 6.67 4.718 15.21 7.076 25.62 7.076 10.736 0 19.438-2.359 26.108-7.076 6.669-4.717 10.004-11.793 10.004-21.229V416.84c0-9.76-3.498-18.138-10.492-25.132-6.995-6.994-15.535-10.492-25.62-10.492-9.76 0-18.138 3.498-25.132 10.492-6.995 6.995-10.492 15.372-10.492 25.132v329.888zm111.752 15.616c0 9.435 3.416 16.511 10.248 21.229 6.832 4.717 15.616 7.076 26.353 7.076 10.41 0 18.95-2.359 25.619-7.076 6.67-4.718 10.005-11.794 10.005-21.229V461.248c0-10.085-3.498-18.707-10.492-25.864-6.995-7.157-15.372-10.735-25.132-10.735-10.086 0-18.707 3.578-25.864 10.735s-10.736 15.779-10.736 25.864v301.096zm112.24 1.464c0 17.894 12.037 26.841 36.112 26.841 24.074 0 36.111-8.947 36.111-26.841v-488c0-27.328-8.296-42.781-24.888-46.36-10.736-2.603-21.31.488-31.72 9.272-10.411 8.784-15.616 21.146-15.616 37.088v488zm114.193 14.152V247.016c0-16.917 5.042-27.002 15.128-30.256 21.797-5.205 43.432-7.808 64.904-7.808 49.775 0 96.136 11.712 139.079 35.136 42.944 23.424 77.674 55.388 104.188 95.892 26.515 40.505 41.887 85.156 46.116 133.957 19.845-8.459 40.991-12.688 63.439-12.688 45.547 0 84.506 16.104 116.876 48.312 32.371 32.209 48.557 70.923 48.557 116.145 0 45.547-16.186 84.424-48.557 116.632-32.37 32.208-71.166 48.312-116.388 48.312l-424.56-.488c-2.929-.976-5.125-2.766-6.589-5.368s-2.193-4.882-2.193-6.834z"/></svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/5021/502194.jpg"></td>
+                <td class="text">HONNE</td>
+                <td class="text">Warm On A Cold Night</td>
+                <td class="text">Warm On A Cold Night</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/7vKG1DfryZiZiTX2KVFTz8?si=804bb3b909c64e19">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/200402/20040260.jpg"></td>
+                <td class="text">JUSTHIS</td>
+                <td class="text">Doppelgänger</td>
+                <td class="text">2 MANY HOMES 4 1 KID</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/01jHeQTUrUEDezy5PMZY7G?si=03046e25be96434c">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201213/20121343.jpg"></td>
+                <td class="text">JUSTHIS & Paloalto</td>
+                <td class="text">Cooler Than the Cool<br>
+                    <div id="feat">(Feat. Huckleberry P)</div></td>
+                <td class="text">Cooler Than the Cool</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/2dDzbAP19HQdJ5XeBukeDB?si=781c924a811d49e4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202376/20237641.jpg"></td>
+                <td class="text">Kid Milli</td>
+                <td class="text">sydney, hongkong</td>
+                <td class="text">L I F E</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/0HvublBa6Vlo9AZCa4vdil?si=28ca872d81cf4363">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40424/4042446.jpg"></td>
+                <td class="text">Kid Milli, dress</td>
+                <td class="text">Citrus</td>
+                <td class="text">Cliché</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/411ji7Vv6o6LYpL8jf53Sf?si=1efd58e7d094477e">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/9142/914235.jpg"></td>
+                <td class="text">Lauv</td>
+                <td class="text">fuck, I'm lonely<br>
+                    <div id="feat">(Feat. Anne-Marie)</div></td>
+                <td class="text">fuck, i'm lonely<br>
+                    <div id="feat">(from “13 Reasons Why: Season 3”)</div></td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/09PGubKAMryhOWv1LHpCYz?si=3060c9571317455a">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203757/20375747.jpg"></td>
+                <td class="text">Leellamarz</td>
+                <td class="text">777<br>
+                    <div id="feat">(Feat. CAMO)</div></td>
+                <td class="text">[L] [DELUXE]</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/4OD3XQvMM9N8NmqGxtUDq5?si=998ffc8688214ebd">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204068/20406881.jpg"></td>
+                <td class="text">Leellamarz</td>
+                <td class="text">비내리면<br>
+                    <div id="feat">(Feat. sogumm) (Prod. BOYCOLD)</div></td>
+                <td class="text">비 내리면</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/45R8aMTK1suFXTraQCzVRe?si=242bf19e8e51438c">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202616/20261674.jpg"></td>
+                <td class="text">Leellamarz</td>
+                <td class="text">야망<br>
+                    <div id="feat">(Feat. ASH ISLAND, 김효은, Hash Swan, CHANGMO)<br>(Prod. TOIL)</div></td>
+                <td class="text">MARZ 2 AMBITION</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/7eDOrayTFdlgaxEbsR2gqQ?si=23169f1dae87432d">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204133/20413318.jpg"></td>
+                <td class="text">Leellamarz</td>
+                <td class="text">Don't Cry<br>
+                    <div id="feat">(Feat. 죠지) (Prod. BOYCOLD)</div></td>
+                <td class="text">흑백영화</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3pEGkFxAMIsz0qNadCveuX?si=623d63fd5ff94054">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203757/20375747.jpg"></td>
+                <td class="text">Leellamarz</td>
+                <td class="text">HAVE A GOOD TRIP</td>
+                <td class="text">[L] [DELUXE]</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/5bqU3Oja9GmlyVH6JvQ4Xs?si=f1ee351291094f59">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202082/20208284.jpg"></td>
+                <td class="text">Leellamarz</td>
+                <td class="text">You</td>
+                <td class="text">VIOLINIST</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/4nvcJ5osYUyQd9pPR2QjhP?si=3d0adb8cea524d6e">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203576/20357651.jpg"></td>
+                <td class="text">MINO</td>
+                <td class="text">도망가</td>
+                <td class="text">TAKE</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3kIaUtQdU9q2z4Jit3Frc5?si=c6f74cbf334f4844">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203576/20357651.jpg"></td>
+                <td class="text">MINO</td>
+                <td class="text">펑!</td>
+                <td class="text">TAKE</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/3wah4PDCUgctsqu7EJVZCR?si=0aefdd0e093548c7">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-LVdy3RM365m6TjTo-Eu4aLg-t500x500.jpg"></td>
+                <td class="text">Paloalto & Huckleberry P</td>
+                <td class="text" colspan="2">LATE SUMMER (Remix)<br>
+                    <div id="feat">(Feat. JUSTHIS)</div></td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://soundcloud.com/thisisjusthis/late-summer-jt-feat-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" class="bi" fill="currentColor" viewBox="0 208.952 1048.713 581.696"><path d="M0 686.216c0 13.014 4.718 22.854 14.152 29.524 9.435 6.669 19.52 9.027 30.256 7.076 10.085-1.952 17.161-5.531 21.229-10.736 4.066-5.205 6.1-13.827 6.1-25.864v-141.52c0-10.086-3.497-18.626-10.492-25.62-6.994-6.995-15.534-10.492-25.62-10.492-9.76 0-18.137 3.497-25.132 10.492C3.498 526.07 0 534.61 0 544.696v141.52zm112.24 60.512c0 9.436 3.335 16.511 10.004 21.229 6.67 4.718 15.21 7.076 25.62 7.076 10.736 0 19.438-2.359 26.108-7.076 6.669-4.717 10.004-11.793 10.004-21.229V416.84c0-9.76-3.498-18.138-10.492-25.132-6.995-6.994-15.535-10.492-25.62-10.492-9.76 0-18.138 3.498-25.132 10.492-6.995 6.995-10.492 15.372-10.492 25.132v329.888zm111.752 15.616c0 9.435 3.416 16.511 10.248 21.229 6.832 4.717 15.616 7.076 26.353 7.076 10.41 0 18.95-2.359 25.619-7.076 6.67-4.718 10.005-11.794 10.005-21.229V461.248c0-10.085-3.498-18.707-10.492-25.864-6.995-7.157-15.372-10.735-25.132-10.735-10.086 0-18.707 3.578-25.864 10.735s-10.736 15.779-10.736 25.864v301.096zm112.24 1.464c0 17.894 12.037 26.841 36.112 26.841 24.074 0 36.111-8.947 36.111-26.841v-488c0-27.328-8.296-42.781-24.888-46.36-10.736-2.603-21.31.488-31.72 9.272-10.411 8.784-15.616 21.146-15.616 37.088v488zm114.193 14.152V247.016c0-16.917 5.042-27.002 15.128-30.256 21.797-5.205 43.432-7.808 64.904-7.808 49.775 0 96.136 11.712 139.079 35.136 42.944 23.424 77.674 55.388 104.188 95.892 26.515 40.505 41.887 85.156 46.116 133.957 19.845-8.459 40.991-12.688 63.439-12.688 45.547 0 84.506 16.104 116.876 48.312 32.371 32.209 48.557 70.923 48.557 116.145 0 45.547-16.186 84.424-48.557 116.632-32.37 32.208-71.166 48.312-116.388 48.312l-424.56-.488c-2.929-.976-5.125-2.766-6.589-5.368s-2.193-4.882-2.193-6.834z"/></svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-000382789236-6r6eib-t500x500.jpg"></td>
+                <td class="text">Paul Blanco</td>
+                <td class="text" colspan="2">Crank Dat Freestyle<br>
+                    <div id="feat">(Prod. BRLLNT)</div></td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://soundcloud.com/paul_blanco/crank-dat-freestyle-prod-brllnt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="25" class="bi" fill="currentColor" viewBox="0 208.952 1048.713 581.696"><path d="M0 686.216c0 13.014 4.718 22.854 14.152 29.524 9.435 6.669 19.52 9.027 30.256 7.076 10.085-1.952 17.161-5.531 21.229-10.736 4.066-5.205 6.1-13.827 6.1-25.864v-141.52c0-10.086-3.497-18.626-10.492-25.62-6.994-6.995-15.534-10.492-25.62-10.492-9.76 0-18.137 3.497-25.132 10.492C3.498 526.07 0 534.61 0 544.696v141.52zm112.24 60.512c0 9.436 3.335 16.511 10.004 21.229 6.67 4.718 15.21 7.076 25.62 7.076 10.736 0 19.438-2.359 26.108-7.076 6.669-4.717 10.004-11.793 10.004-21.229V416.84c0-9.76-3.498-18.138-10.492-25.132-6.995-6.994-15.535-10.492-25.62-10.492-9.76 0-18.138 3.498-25.132 10.492-6.995 6.995-10.492 15.372-10.492 25.132v329.888zm111.752 15.616c0 9.435 3.416 16.511 10.248 21.229 6.832 4.717 15.616 7.076 26.353 7.076 10.41 0 18.95-2.359 25.619-7.076 6.67-4.718 10.005-11.794 10.005-21.229V461.248c0-10.085-3.498-18.707-10.492-25.864-6.995-7.157-15.372-10.735-25.132-10.735-10.086 0-18.707 3.578-25.864 10.735s-10.736 15.779-10.736 25.864v301.096zm112.24 1.464c0 17.894 12.037 26.841 36.112 26.841 24.074 0 36.111-8.947 36.111-26.841v-488c0-27.328-8.296-42.781-24.888-46.36-10.736-2.603-21.31.488-31.72 9.272-10.411 8.784-15.616 21.146-15.616 37.088v488zm114.193 14.152V247.016c0-16.917 5.042-27.002 15.128-30.256 21.797-5.205 43.432-7.808 64.904-7.808 49.775 0 96.136 11.712 139.079 35.136 42.944 23.424 77.674 55.388 104.188 95.892 26.515 40.505 41.887 85.156 46.116 133.957 19.845-8.459 40.991-12.688 63.439-12.688 45.547 0 84.506 16.104 116.876 48.312 32.371 32.209 48.557 70.923 48.557 116.145 0 45.547-16.186 84.424-48.557 116.632-32.37 32.208-71.166 48.312-116.388 48.312l-424.56-.488c-2.929-.976-5.125-2.766-6.589-5.368s-2.193-4.882-2.193-6.834z"/></svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/4320/432061.jpg"></td>
+                <td class="text">Sam Smith</td>
+                <td class="text">I'm Not The Only One</td>
+                <td class="text">In The Lonely Hour</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/7795WJLVKJoAyVoOtCWqXN?si=ad34adef2eed4be3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204184/20418409.jpg"></td>
+                <td class="text">Skinny Brown, Minit</td>
+                <td class="text">21 Resistance<br>
+                    <div id="feat">(Feat. 황재현, JAEHA)</div></td>
+                <td class="text">미끼닛브라운 0.5</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/468yrCoVeJsILB3VCNma87?si=c9128272aeef47c0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204184/20418409.jpg"></td>
+                <td class="text">Skinny Brown, Minit</td>
+                <td class="text">FLEX<br>
+                    <div id="feat">(Feat. ZENE THE ZILLA)</div></td>
+                <td class="text">미끼닛브라운 0.5</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/6mttitOJ0i7z874UOuV3tE?si=7450736d83fc4a3d">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203633/20363300.jpg"></td>
+                <td class="text">sogumm</td>
+                <td class="text">위로<br>
+                    <div id="feat">(Feat. 10CM)</div></td>
+                <td class="text">위로</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/7zN8mMUsLsDEKoXnbR0pqR?si=b99a86a0ce6b4099">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203269/20326912.jpg"></td>
+                <td class="text">Swervy</td>
+                <td class="text">Alibi</td>
+                <td class="text">Undercover Angel</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/2GKLrVGgdAEEbKjFHLRyI7?si=12ae193f7cac4384">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201809/20180970.jpg"></td>
+                <td class="text">The Quiett, Leellamarz</td>
+                <td class="text">namchin</td>
+                <td class="text">namchin</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/1jBWWHVx5E6ompn11XUtoC?si=d40790a57337407e">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/7271/727133.jpg"></td>
+                <td class="text">The Weeknd</td>
+                <td class="text">Call Out My Name</td>
+                <td class="text">My Dear Melancholy, </td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/09mEdoA6zrmBPgTEN5qXmN?si=78d1a951cdf54ae4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203886/20388643.jpg"></td>
+                <td class="text">TOIL</td>
+                <td class="text">시한부<br>
+                    <div id="feat">(Feat. Leellamarz, 로꼬)</td>
+                <td class="text">Curtain Call</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/1jQg7ImfH2OVpp9lu9mOj0?si=e2910b542e6e4f8f">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+            <tr height=75>
+                <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203419/20341915.jpg"></td>
+                <td class="text">ZENE THE ZILLA</td>
+                <td class="text">평소대로</td>
+                <td class="text">FLOCC</td>
+                <td width=75 class="link">
+                    <a target='_blank' href="https://open.spotify.com/track/6NiKHUc8tiotZFVMKh3jBu?si=364c8fa8019a4665">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-spotify" viewBox="0 0 16 16">
+							<path
+								d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"
+							/>
+						</svg>
+                    </a></td>
+            </tr>
+		</table>
 
-<body>
-    <div style="height:2em;"></div>
-    <table border="1" bordercolor="black" width="960">
-        <tr height=40>
-            <td width=75></td>
-            <td class="text">Artist</td>
-            <td class="text">Title</td>
-            <td class="text">Album</td>
-            <td width="75" class="text">Link</td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/127567/12756720.jpg"></td>
-            <td class="text">5 Seconds Of Summer</td>
-            <td class="text">Woke Up in Japan</td>
-            <td class="text">Youngblood</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5FA9XC36IlV9bnhMqqzNc9?si=b602b8f331ec4d81">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202919/20291993.jpg"></td>
-            <td class="text">기리보이</td>
-            <td class="text">거지<br>
-                <div id="feat">(Feat. YUNHWAY, Jhnovr, JUSTHIS)</div></td>
-            <td class="text">치명적인 앨범 Ⅲ</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/51Y7jbTiH8xBDfLvRAxFFE?si=4600e5c92e7f4c0a">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/9574/957418.jpg"></td>
-            <td class="text">김승민</td>
-            <td class="text">Chase the Star</td>
-            <td class="text">Chase the Star</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5fLUy8R2JOpCXH33fesMmv?si=36ae3ea21751409b">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/38/3894.jpg"></td>
-            <td class="text">모자이크</td>
-            <td class="text">왕자와 병사들</td>
-            <td class="text">모자이크 3</td>
-            <td width=75 class="link">
-                <a target='_blank' href="http://kko.to/ehWjwIZ4j">
-                    <img loading="lazy" class="cover" src="../assets/icons/MelonIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/5855/585591.jpg"></td>
-            <td class="text">볼빨간사춘기</td>
-            <td class="text">프리지아</td>
-            <td class="text">Full Album RED PLANET</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/0KX2V65DSgo9ii3A0rJAPw?si=abe5da4abbdb44ff">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202383/20238312.jpg"></td>
-            <td class="text">백예린</td>
-            <td class="text">그건 아마 우리의 잘못은 아닐거야</td>
-            <td class="text">Our love is great</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/2xxAW1kGFSVCDdRVoryX8R?si=b19c0b72dac54ec3">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204200/20420099.jpg"></td>
-            <td class="text">백예린</td>
-            <td class="text">왜? 날</td>
-            <td class="text">선물</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/4SkwI7BxrIk5t5bpbvcrs6?si=daf4257cbc184a39">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202938/20293864.jpg"></td>
-            <td class="text">선우정아</td>
-            <td class="text">도망가자 (Run With Me)</td>
-            <td class="text">Serenade</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/1m8b3KFsAiGyjRc90ZfEB9?si=befe8189437c40ea">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/2924/292427_cf001.jpg"></td>
-            <td class="text">스탠딩에그</td>
-            <td class="text">Little Star</td>
-            <td class="text">Lucky</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5Y9hGEOA9o5xdA8RHt8jKw?si=2a0f163c60c548f3">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40657/4065711.jpg"></td>
-            <td class="text">영재</td>
-            <td class="text">Beautiful</td>
-            <td class="text">COLORS from Ars</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/6ZfBdeyXWs5E3hpdL0WhzW?si=facd99c270a84a21">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203666/20366687.jpg"></td>
-            <td class="text">원슈타인</td>
-            <td class="text">세상에 나쁜 개는 없다<br>
-                <div id="feat">(Feat. YDG, Zion.T) (Prod. Slom)</div></td>
-            <td class="text">쇼미더머니 9 Semi Final</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/1BVXVMH9da5wS4fe6vCVqS?si=0ece31399ad149ad">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202371/20237198.jpg"></td>
-            <td class="text">잔나비</td>
-            <td class="text">나의 기쁨 나의 노래 (Intro)</td>
-            <td class="text">전설</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/6qpEu4YIoPzFjhXq8WTXCC?si=a3cfdbaaf3374d18">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202917/20291742.jpg"></td>
-            <td class="text">창모</td>
-            <td class="text">2 minutes of hell<br>
-                <div id="feat">(Feat. Paul Blanco)</div></td>
-            <td class="text">Boyhood</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5J1kkr5sbA2uOOuNpBOkIN?si=c143fb594b634ea6">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201722/20172253.jpg"></td>
-            <td class="text">창모</td>
-            <td class="text">라일락<br>
-                <div id="feat">(Feat. 최정훈 of 잔나비)</div></td>
-            <td class="text">닿는 순간</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/2HY84IWRZVIrbPn6c6EIim?si=6a946ae01ad944b0">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202189/20218902.jpg"></td>
-            <td class="text">케이시</td>
-            <td class="text">그때가 좋았어</td>
-            <td class="text">그때가 좋았어</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3LpAsXjqTQ5FUyptb2lujH?si=1ec0ec7c3ac84375">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/200641/20064160.jpg"></td>
-            <td class="text">태연</td>
-            <td class="text">11:11</td>
-            <td class="text">11:11</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/2Y4iTaIAamhYPyZcOdfL3g?si=01f08873b4dc42f3">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201547/20154722.jpg"></td>
-            <td class="text">폴킴</td>
-            <td class="text">모든 날, 모든 순간</td>
-            <td class="text">'키스 먼저 할까요?'<br>OST Part.3</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3Ml2s37uS9jqRM2R3bfDiB?si=6b7ea595bd784373">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/3456/345641.jpg"></td>
-            <td class="text">프라이머리</td>
-            <td class="text">3호선 매봉역<br>
-                <div id="feat">(Feat. Paloalto, Beenzino)</div></td>
-            <td class="text">Primary And<br>The Messengers LP</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3oDNKxY583pu08FJw8tst5?si=fec69349f27a4b70">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204215/20421555.jpg"></td>
-            <td class="text">피노다인</td>
-            <td class="text">Universe<br>
-                <div id="feat">(Feat. 이적)</div></td>
-            <td class="text">Universe</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/68duJkvrmsHi0nR44nUXZc?si=bbb615265af04f30">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203151/20315104.jpg"></td>
-            <td class="text">한요한</td>
-            <td class="text">400km<br>
-                <div id="feat">(Feat. Kid Milli)</div></td>
-            <td class="text">원기옥</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5PFqdHy3b9PGgfns2uVpE6?si=0cb73d86257e4264">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201859/20185989.jpg"></td>
-            <td class="text">한요한</td>
-            <td class="text">따릉이</td>
-            <td class="text">청룡쇼바</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/59B7I3HFd47ujLqwnlBs4s?si=fba6db980f2c4a8f">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201292/20129278.jpg"></td>
-            <td class="text">허클베리피</td>
-            <td class="text">One of Them<br>
-                <div id="feat">(Feat. JUSTHIS & EK)</div></td>
-            <td class="text">One of Them</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/1kG6aENoF6GP5p6SJQQDSn?si=54995dd900a84cb0">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/7469/746993.jpg"></td>
-            <td class="text">혁오</td>
-            <td class="text">LOVE YA!</td>
-            <td class="text">24 : How to find true love<br>and happiness</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/70M62MNyEskm9on3FiDubd?si=9ec1a289e1424efa">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202401/20240116.jpg"></td>
-            <td class="text">ASH ISLAND</td>
-            <td class="text">Paranoid</td>
-            <td class="text">ASH</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/4f3E2bdBCYDvC0otoYcdXg?si=dbd0ef8dbb454cb0">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202401/20240116.jpg"></td>
-            <td class="text">ASH ISLAND</td>
-            <td class="text">발할라 (Valhalla)<br>
-                <div id="feat">(Feat. Hash Swan & Yami Tommy)</div></td>
-            <td class="text">ASH</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3KcHt0BQF67rdea6eVVL2G?si=5774b175a66d4932">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/3338/333800.jpg"></td>
-            <td class="text">Beenzino</td>
-            <td class="text">If I Die Tomorrow</td>
-            <td class="text">2 4 : 2 6</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/0XAjKGJBKFVfiG3XvGwIcH?si=a3f0c62fe1d04f40">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202415/20241522.jpg"></td>
-            <td class="text">BewhY</td>
-            <td class="text">찬란</td>
-            <td class="text">The Movie Star</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/56gnI7SIZbFhiwzfN1ogN4?si=5818b80c26d04bbf">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40598/4059842.jpg"></td>
-            <td class="text">BewhY</td>
-            <td class="text">Celebration</td>
-            <td class="text">032 Funk</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3bm7XUKbcBSHTciUGRAaCR?si=cb959b0b18db40f5">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203180/20318052.jpg"></td>
-            <td class="text">BewhY, 손심바</td>
-            <td class="text">어디로<br>
-                <div id="feat">(Feat. C JAMM, Jvcki Wai)</div></td>
-            <td class="text">NEO CHRISTIAN</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/35QdNOzsIMw1ZXElaGH8Ec?si=85795aa2394a4e4f">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40342/4034280.jpg"></td>
-            <td class="text">CHEEZE</td>
-            <td class="text">이렇게 좋아해 본 적이 없어요</td>
-            <td class="text">이렇게 좋아해 본 적이 없어요<br>(소녀의 세계 X CHEEZE(치즈))</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/0WbOmRgxeIScXc0H50zjIx?si=f3b78e37b518427c">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202541/20254188.jpg"></td>
-            <td class="text">C JAMM</td>
-            <td class="text">코케인 러브♥<br>
-                <div id="feat">(Feat. Yescoba)</div></td>
-            <td class="text">킁</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5199XnGGeioscP5Crleqgh?si=8159801798aa4b4a">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/6228/622831.jpg"></td>
-            <td class="text">Calvin Harris</td>
-            <td class="text">Feels<br>
-                <div id="feat">(Feat. Pharrell, Katy Perry, Big Sean)</div></td>
-            <td class="text">Funk Wav Bounces Vol.1</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5bcTCxgc7xVfSaMV3RuVke?si=ffea1892d7da44aa">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203162/20316203.jpg"></td>
-            <td class="text">CODE KUNST</td>
-            <td class="text">PEOPLE<br>
-                <div id="feat">(Feat. Paloalto, The Quiett)</div></td>
-            <td class="text">PEOPLE</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/55VLNyLM11aRY7rn4xSupR?si=003af69f10a14ad8">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203326/20332694.jpg"></td>
-            <td class="text">D-Hack, Pateko</td>
-            <td class="text">OHAYO MY NIGHT</td>
-            <td class="text">OHAYO MY NIGHT</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/4iJprGt1rt5iy0sxXXaRWn?si=66d46d3945744b82">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/6118/611813.jpg"></td>
-            <td class="text">Ed Sheeran</td>
-            <td class="text">Perfect</td>
-            <td class="text">÷ [Deluxe]</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v?si=9086289a757e45bb">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-000124216052-6ifvq8-t500x500.jpg"></td>
-            <td class="text">E SENS</td>
-            <td class="text" colspan="2">비행</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://soundcloud.com/esensofficial/6xilzhi4cf8c">
-                    <img loading="lazy" class="cover" src="../assets/icons/SCIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40638/4063862.jpg"></td>
-            <td class="text">GRAY</td>
-            <td class="text">Party For The Night<br>
-                <div id="feat">(Feat. 로꼬, 이하이)</div></td>
-            <td class="text">grayground.</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/2UsZC5QgWeHj8jlhEoXplf?si=5f28c5fb8c7949c4">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40638/4063862.jpg"></td>
-            <td class="text">GRAY</td>
-            <td class="text">Selfish<br>
-                <div id="feat">(Feat. 우원재)</div></td>
-            <td class="text">grayground.</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/6De1dLF23zuUzf5jbh2vI1?si=7dac2d56ccb04ea1">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-q10QrAyZRhz0UIdC-1bhpEQ-t500x500.jpg"></td>
-            <td class="text">HΛVO</td>
-            <td class="text" colspan="2">🤬21세기 강제징병 배상하라!!!🤬</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://soundcloud.com/dhckdgus8521/dontwannabeamilitary">
-                    <img loading="lazy" class="cover" src="../assets/icons/SCIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/5021/502194.jpg"></td>
-            <td class="text">HONNE</td>
-            <td class="text">Warm On A Cold Night</td>
-            <td class="text">Warm On A Cold Night</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/7vKG1DfryZiZiTX2KVFTz8?si=804bb3b909c64e19">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/200402/20040260.jpg"></td>
-            <td class="text">JUSTHIS</td>
-            <td class="text">Doppelgänger</td>
-            <td class="text">2 MANY HOMES 4 1 KID</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/01jHeQTUrUEDezy5PMZY7G?si=03046e25be96434c">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201213/20121343.jpg"></td>
-            <td class="text">JUSTHIS & Paloalto</td>
-            <td class="text">Cooler Than the Cool<br>
-                <div id="feat">(Feat.)</div></td>
-            <td class="text">Cooler Than the Cool</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/2dDzbAP19HQdJ5XeBukeDB?si=781c924a811d49e4">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202376/20237641.jpg"></td>
-            <td class="text">Kid Milli</td>
-            <td class="text">sydney, hongkong</td>
-            <td class="text">L I F E</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/0HvublBa6Vlo9AZCa4vdil?si=28ca872d81cf4363">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/40424/4042446.jpg"></td>
-            <td class="text">Kid Milli, dress</td>
-            <td class="text">Citrus</td>
-            <td class="text">Cliché</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/411ji7Vv6o6LYpL8jf53Sf?si=1efd58e7d094477e">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/9142/914235.jpg"></td>
-            <td class="text">Lauv</td>
-            <td class="text">fuck, I'm lonely<br>
-                <div id="feat">(Feat. Anne-Marie)</div></td>
-            <td class="text">fuck, i'm lonely<br>
-                <div id="feat">(from “13 Reasons Why: Season 3”)</div></td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/09PGubKAMryhOWv1LHpCYz?si=3060c9571317455a">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203757/20375747.jpg"></td>
-            <td class="text">Leellamarz</td>
-            <td class="text">777<br>
-                <div id="feat">(Feat. CAMO)</div></td>
-            <td class="text">[L] [DELUXE]</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/4OD3XQvMM9N8NmqGxtUDq5?si=998ffc8688214ebd">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204133/20413318.jpg"></td>
-            <td class="text">Leellamarz</td>
-            <td class="text">Don't Cry<br>
-                <div id="feat">(Feat. 죠지) (Prod. BOYCOLD)</div></td>
-            <td class="text">흑백영화</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3pEGkFxAMIsz0qNadCveuX?si=623d63fd5ff94054">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203757/20375747.jpg"></td>
-            <td class="text">Leellamarz</td>
-            <td class="text">HAVE A GOOD TRIP</td>
-            <td class="text">[L] [DELUXE]</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/5bqU3Oja9GmlyVH6JvQ4Xs?si=f1ee351291094f59">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202082/20208284.jpg"></td>
-            <td class="text">Leellamarz</td>
-            <td class="text">You</td>
-            <td class="text">VIOLINIST</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/4nvcJ5osYUyQd9pPR2QjhP?si=3d0adb8cea524d6e">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204068/20406881.jpg"></td>
-            <td class="text">Leellamarz</td>
-            <td class="text">비내리면<br>
-                <div id="feat">(Feat. sogumm) (Prod. BOYCOLD)</div></td>
-            <td class="text">비 내리면</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/45R8aMTK1suFXTraQCzVRe?si=242bf19e8e51438c">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/202616/20261674.jpg"></td>
-            <td class="text">Leellamarz</td>
-            <td class="text">야망<br>
-                <div id="feat">(Feat. ASH ISLAND, 김효은, Hash Swan, CHANGMO)<br>(Prod. TOIL)</div></td>
-            <td class="text">MARZ 2 AMBITION</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/7eDOrayTFdlgaxEbsR2gqQ?si=23169f1dae87432d">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203576/20357651.jpg"></td>
-            <td class="text">MINO</td>
-            <td class="text">도망가</td>
-            <td class="text">TAKE</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3kIaUtQdU9q2z4Jit3Frc5?si=c6f74cbf334f4844">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203576/20357651.jpg"></td>
-            <td class="text">MINO</td>
-            <td class="text">펑!</td>
-            <td class="text">TAKE</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/3wah4PDCUgctsqu7EJVZCR?si=0aefdd0e093548c7">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-LVdy3RM365m6TjTo-Eu4aLg-t500x500.jpg"></td>
-            <td class="text">Paloalto & Huckleberry P</td>
-            <td class="text" colspan="2">LATE SUMMER (Remix)<br>
-                <div id="feat">(Feat. JUSTHIS)</div></td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://soundcloud.com/thisisjusthis/late-summer-jt-feat-2">
-                    <img loading="lazy" class="cover" src="../assets/icons/SCIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://i1.sndcdn.com/artworks-000382789236-6r6eib-t500x500.jpg"></td>
-            <td class="text">Paul Blanco</td>
-            <td class="text" colspan="2">Crank Dat Freestyle<br>
-                <div id="feat">(Prod. BRLLNT)</div></td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://soundcloud.com/paul_blanco/crank-dat-freestyle-prod-brllnt">
-                    <img loading="lazy" class="cover" src="../assets/icons/SCIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/4320/432061.jpg"></td>
-            <td class="text">Sam Smith</td>
-            <td class="text">I'm Not The Only One</td>
-            <td class="text">In The Lonely Hour</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/7795WJLVKJoAyVoOtCWqXN?si=ad34adef2eed4be3">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204184/20418409.jpg"></td>
-            <td class="text">Skinny Brown, Minit</td>
-            <td class="text">21 Resistance<br>
-                <div id="feat">(Feat. 황재현, JAEHA)</div></td>
-            <td class="text">미끼닛브라운 0.5</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/468yrCoVeJsILB3VCNma87?si=c9128272aeef47c0">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/204184/20418409.jpg"></td>
-            <td class="text">Skinny Brown, Minit</td>
-            <td class="text">FLEX<br>
-                <div id="feat">(Feat. ZENE THE ZILLA)</div></td>
-            <td class="text">미끼닛브라운 0.5</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/6mttitOJ0i7z874UOuV3tE?si=7450736d83fc4a3d">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203633/20363300.jpg"></td>
-            <td class="text">sogumm</td>
-            <td class="text">위로<br>
-                <div id="feat">(Feat. 10CM)</div></td>
-            <td class="text">위로</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/7zN8mMUsLsDEKoXnbR0pqR?si=b99a86a0ce6b4099">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203269/20326912.jpg"></td>
-            <td class="text">Swervy</td>
-            <td class="text">Alibi</td>
-            <td class="text">Undercover Angel</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/2GKLrVGgdAEEbKjFHLRyI7?si=12ae193f7cac4384">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/201809/20180970.jpg"></td>
-            <td class="text">The Quiett, Leellamarz</td>
-            <td class="text">namchin</td>
-            <td class="text">namchin</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/1jBWWHVx5E6ompn11XUtoC?si=d40790a57337407e">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/7271/727133.jpg"></td>
-            <td class="text">The Weeknd</td>
-            <td class="text">Call Out My Name</td>
-            <td class="text">My Dear Melancholy, </td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/09mEdoA6zrmBPgTEN5qXmN?si=78d1a951cdf54ae4">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203886/20388643.jpg"></td>
-            <td class="text">TOIL</td>
-            <td class="text">시한부<br>
-                <div id="feat">(Feat. Leellamarz, 로꼬)</td>
-            <td class="text">Curtain Call</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/1jQg7ImfH2OVpp9lu9mOj0?si=e2910b542e6e4f8f">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-        <tr height=75>
-            <td width=75><img loading="lazy" class="cover" src="https://image.bugsm.co.kr/album/images/1000/203419/20341915.jpg"></td>
-            <td class="text">ZENE THE ZILLA</td>
-            <td class="text">평소대로</td>
-            <td class="text">FLOCC</td>
-            <td width=75 class="link">
-                <a target='_blank' href="https://open.spotify.com/track/6NiKHUc8tiotZFVMKh3jBu?si=364c8fa8019a4665">
-                    <img loading="lazy" class="cover" src="../assets/icons/SpotifyIco.png">
-                </a></td>
-        </tr>
-    </table>
+        <info>
+            * 순서는 아티스트 이름, 노래 제목 (특-한-영) 순으로 정렬되었음. <br>
+            * 링크는 Soundcloud, Spotify, 멜론 순의 중요도로 작성되었음. <br><br>
+        </info>
+        
+        <div id="box">
+            <cr><i>© 2021 y0On</i></cr>
+        </div>
 
-    <info>
-        * 순서는 아티스트 이름, 노래 제목 (특-한-영) 순으로 정렬되었음. <br>
-        * 링크는 Soundcloud, Spotify, 멜론 순의 중요도로 작성되었음. <br><br>
-    </info>
-    
-    <div id="box">
-        <cr><i>© 2021 y0On</i></cr>
-    </div>
-    <script src="../JS/Lazy.js"></script>
-</body>
+        <script src="../JS/Lazy.js"></script>
+		<script src="../src/JS/darkMode.js"></script>
+	</body>
 </html>

@@ -1,0 +1,217 @@
+@font-face {
+	font-family: "nsq";
+	src: url("/fonts/NanumSquare_acR.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Gotham Light";
+	src: url("/fonts/GothamLight.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "KleeOne";
+	src: url("/fonts/KleeOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url("/fonts/Gotham-Black.otf") format("OpenType");
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	padding-top: 30px;
+	font-family: "nsq";
+	font-size: 30px;
+	margin: 0 64px 0 64px;
+	background-attachment: fixed;
+	background: white;
+	color: black;
+}
+
+header {
+	border-bottom: black;
+	width: 1064px;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 120px;
+	transition: 0.5s;
+}
+
+h1 {
+	font-family: "Gotham", sans-serif;
+	font-size: 75px;
+	margin: 50px 0;
+}
+
+table {
+	border-collapse: collapse;
+	width: 1064px;
+	font-size: 20px;
+	padding-right: 32px;
+	color: black;
+	transition: 0.5s;
+}
+
+.text {
+	padding-left: 10px;
+}
+
+.HD {
+	height: 50px;
+}
+
+.cover {
+	width: 75px;
+	vertical-align: bottom;
+}
+
+div#nav {
+	float: left;
+	margin-left: 20px;
+	display: block;
+}
+
+div#songs {
+	height: 100px;
+}
+
+div#cover {
+	float: left;
+}
+
+div#feat {
+	color: #888888;
+	font-size: 15px;
+	font-weight: light;
+	font-style: italic;
+	padding-top: 4px;
+}
+
+div#box {
+	height: 50px;
+	display: table-cell;
+	vertical-align: text-bottom;
+}
+
+info {
+	font-size: 15px;
+	font-style: italic;
+}
+
+cr {
+	font-size: 20px;
+}
+
+a {
+	color: inherit;
+}
+
+a:hover {
+	color: #0a58ca;
+}
+
+.bi {
+	padding-left: 20px;
+	padding-top: 4px;
+}
+
+.melon {
+	padding-left: 25px;
+	padding-top: 4px;
+}
+
+body {
+	background: white;
+	color: black;
+	transition: 0.5s;
+}
+
+body.dark-mode {
+	background: #000;
+	color: white;
+	transition: 0.5s;
+}
+
+body.dark-mode header {
+	background: #000;
+	color: white;
+	transition: 0.5s;
+}
+
+body.dark-mode table {
+	color: white;
+	border: white;
+	transition: 0.5s;
+}
+
+.switch {
+	position: fixed;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+	bottom: 28px;
+	right: 75px;
+}
+
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+#ChangeTheme:checked + span.slide:before {
+	transform: translatex(40px);
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+input:checked + .slider {
+	background-color: #2196f3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
