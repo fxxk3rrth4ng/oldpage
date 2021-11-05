@@ -35,6 +35,8 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	height: 120px;
+	color: black;
+	transition: 0.5s;
 }
 
 h1 {
@@ -176,4 +178,28 @@ a:hover {
 
 td.album {
 	font-weight: bold;
+}
+
+body {
+	background: white;
+	color: black;
+	transition: 0.5s;
+}
+
+body.dark-mode {
+	background: #000;
+	color: white;
+	transition: 0.5s;
+}
+
+body.dark-mode header {
+	background: #000;
+	color: white;
+	transition: 0.5s;
+}
+
+body.dark-mode table {
+	color: white;
+	border: white;
+	transition: 0.5s;
 }
