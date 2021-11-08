@@ -89,6 +89,10 @@ h4 {
 	font-weight: normal;
 }
 
+cr {
+	font-size: 20px;
+}
+
 /* Main */
 body {
 	margin: 0 64px 0 64px;
@@ -137,6 +141,13 @@ header {
 
 progress {
 	width: 5em;
+}
+
+div#box {
+	float: bottom;
+	height: 50px;
+	display: table-cell;
+	vertical-align: text-bottom;
 }
 
 /* Change Mode Button */
