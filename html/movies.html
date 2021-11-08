@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../src/CSS/movie.css" />
+		<title>Movies | y0On</title>
+	</head>
+
+	<body>
+		<!-- Top Button -->
+		<div style="position: fixed; bottom: 15px; right: 70px">
+			<a href="#FS">
+				<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+					<path
+						fill-rule="evenodd"
+						d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+					/>
+				</svg>
+			</a>
+		</div>
+		<!-- Bottom Button -->
+		<div style="position: fixed; bottom: 15px; right: 15px">
+			<a href="#box">
+				<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+					<path
+						fill-rule="evenodd"
+						d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+					/>
+				</svg>
+			</a>
+		</div>
+		<!-- Change Theme Button -->
+		<label for="ChangeTheme" class="switch">
+			<input type="checkbox" id="ChangeTheme" />
+			<span class="slider round"></span>
+		</label>
+
+		<!-- Header -->
+		<header>
+			<!-- Title -->
+			<h1>Movies</h1>
+			<!-- Links -->
+			<nav>
+				<div class="nav">
+					<a href="pages.html">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="50"
+							height="50"
+							fill="currentColor"
+							class="bi bi-folder-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z"
+							/>
+						</svg>
+					</a>
+				</div>
+				<div class="nav">
+					<a href="../index.html">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="50"
+							height="50"
+							fill="currentColor"
+							class="bi bi-house-fill"
+							viewBox="0 0 16 16"
+						>
+							<path
+								fill-rule="evenodd"
+								d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+							/>
+							<path
+								fill-rule="evenodd"
+								d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"
+							/>
+						</svg>
+					</a>
+				</div>
+			</nav>
+		</header>
+
+		<div style="height: 7em"></div>
+
+		<div class="container">
+			<img src="https://www.themoviedb.org/t/p/original/yACIAqAkSLkX4coHafpyLWAtQjw.jpg" class="poster" />
+			<progress class="progress" value="1" max="9"></progress>
+			<font size="5"><br />오징어 게임<br />(2021)</font>
+		</div>
+		<div class="container">
+			<img src="https://www.themoviedb.org/t/p/original/nrTHZUlI8f2iBNMbycqOd2cQQVO.jpg" class="poster" />
+			<progress class="progress" value="3" max="37"></progress>
+			<font size="5"><br />데스노트<br />(2006)</font>
+		</div>
+		<div class="container">
+			<img src="https://www.themoviedb.org/t/p/original/zd8mxIfGY8SlupYd9XvK3qJL91B.jpg" class="poster" />
+			<progress class="progress" value="6" max="13"></progress>
+			<font size="5"><br />종이의 집 S1<br />(2017)</font>
+		</div>
+		<div class="container">
+			<img src="https://www.themoviedb.org/t/p/original/a80pxtZrNSyqrME9rmFC6sZevZ7.jpg" class="poster" />
+			<progress class="progress" value="8" max="8"></progress>
+			<font size="5"><br />브리저튼<br />(2020)</font>
+		</div>
+
+		<script src="../src/JS/darkMode.js"></script>
+	</body>
+</html>

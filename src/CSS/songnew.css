@@ -1,21 +1,21 @@
 @font-face {
 	font-family: "nsq";
-	src: url("/fonts/NanumSquare_acR.ttf") format("truetype");
+	src: url("../../fonts/NanumSquare_acR.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Gotham Light";
-	src: url("/fonts/GothamLight.ttf") format("truetype");
+	src: url("../../fonts/GothamLight.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "KleeOne";
-	src: url("/fonts/KleeOne-Regular.ttf") format("truetype");
+	src: url("../../fonts/KleeOne-Regular.ttf") format("truetype");
 }
 
 @font-face {
 	font-family: "Gotham";
-	src: url("/fonts/Gotham-Black.otf") format("OpenType");
+	src: url("../../fonts/Gotham-Black.otf") format("OpenType");
 }
 
 html {

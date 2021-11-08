@@ -18,97 +18,135 @@
 	src: url("../../fonts/Gotham-Black.otf") format("OpenType");
 }
 
+/*  Color */
 body {
-	padding-top: 30px;
-	font-family: "nsq";
-	font-size: 30px;
-	margin: 0 64px 0 64px;
-	background-attachment: fixed;
 	background: white;
-}
-
-header {
-	border-bottom: black;
-	width: 1064px;
-	background: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 120px;
 	color: black;
 	transition: 0.5s;
 }
 
-h1 {
+body.dark-mode {
+	background: black;
+	transition: 0.5s;
+}
+
+header {
+	background: white;
+	color: black;
+	transition: 0.5s;
+}
+
+body.dark-mode header {
+	background: black;
+	color: white;
+	transition: 0.5s;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0a58ca;
+}
+
+svg {
+	fill: black;
+	transition: 0.5s;
+}
+
+body.dark-mode svg {
+	fill: white;
+	transition: 0.5s;
+}
+
+/* Font */
+body {
+	font-family: "nsq";
+	font-size: 30px;
+}
+
+header h1 {
 	font-family: "Gotham", sans-serif;
-	font-size: 75px;
+	font-size: 2.5em;
 	margin: 50px 0;
 }
 
-table {
-	border-collapse: collapse;
-	width: 1064px;
-	font-size: 18px;
-	padding-right: 32px;
+h2 {
+	font-family: "Gotham Light";
+	font-size: 50px;
 }
 
-.text {
-	padding-left: 10px;
+h3 {
+	font-family: "nsq", sans-serif;
+	font-size: 30px;
+	font-weight: normal;
 }
 
-.HD {
-	height: 50px;
+h4 {
+	font-size: 40px;
+	font-weight: normal;
 }
 
-.cover {
-	width: 75px;
-	vertical-align: bottom;
+/* Main */
+body {
+	margin: 0 64px 0 64px;
 }
 
-div#nav {
+header {
+	position: fixed;
+	width: 80vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 4em;
+	padding: 32px 32px 32px 32px;
+}
+
+.nav {
 	float: left;
 	margin-left: 20px;
+}
+
+.poster {
 	display: block;
+	height: 8em;
+	padding-left: 0.3em;
+	padding-top: 0.1em;
 }
 
-div#songs {
-	height: 100px;
-}
-
-div#cover {
+.container {
 	float: left;
+	width: 6em;
+	height: 9em;
+	text-align: center;
+	transition: 0.2s;
+	align-items: center;
 }
 
-div#feat {
-	color: #888888;
-	font-size: 15px;
-	font-weight: light;
-	font-style: italic;
-	padding-top: 4px;
+.container:hover {
+	transform: scale(1.1);
+	transition: 0.2s;
 }
 
-div#box {
-	height: 50px;
-	display: table-cell;
-	vertical-align: text-bottom;
+.title {
+	font-size: 0.8em;
+	clear: both;
 }
 
-info {
-	font-size: 15px;
-	font-style: italic;
+progress {
+	width: 5em;
 }
 
-cr {
-	font-size: 20px;
-}
-
+/* Change Mode Button */
 .switch {
 	position: fixed;
 	display: inline-block;
 	width: 60px;
 	height: 34px;
 	bottom: 28px;
-	right: 75px;
+	right: 130px;
 }
 
 .switch input {
@@ -166,40 +204,4 @@ input:checked + .slider:before {
 
 .slider.round:before {
 	border-radius: 50%;
-}
-
-a {
-	color: inherit;
-}
-
-a:hover {
-	color: #0a58ca;
-}
-
-td.album {
-	font-weight: bold;
-}
-
-body {
-	background: white;
-	color: black;
-	transition: 0.5s;
-}
-
-body.dark-mode {
-	background: #000;
-	color: white;
-	transition: 0.5s;
-}
-
-body.dark-mode header {
-	background: #000;
-	color: white;
-	transition: 0.5s;
-}
-
-body.dark-mode table {
-	color: white;
-	border: white;
-	transition: 0.5s;
 }
