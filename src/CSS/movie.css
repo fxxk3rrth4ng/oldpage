@@ -61,6 +61,36 @@ body.dark-mode svg {
 	transition: 0.5s;
 }
 
+.container {
+	color: black;
+	transition: 0.5s;
+}
+
+body.dark-mode .container {
+	color: white;
+	transition: 0.5s;
+}
+
+cr {
+	color: black;
+	transition: 0.5s;
+}
+
+body.dark-mode cr {
+	color: white;
+	transition: 0.5s;
+}
+
+h2 {
+	color: black;
+	transition: 0.5s;
+}
+
+body.dark-mode h2 {
+	color: white;
+	transition: 0.5s;
+}
+
 /* Font */
 body {
 	font-family: "nsq";
